@@ -21,6 +21,8 @@ function reducer(state = initalState, action) {
       return { ...state, sandwich: state.sandwich + 1 };
     case 'REMOVE_SANDWICH':
       return { ...state, sandwich: state.sandwich - 1 };
+    case 'EMPTY_BOX':
+      return { drinks: [] };
     default: 
       return state;
   }
